@@ -10,7 +10,7 @@ int main(int argc, char *argv[] )
   //Add call to get rank
   //Add call to get size of communicator
   MPI_Init(&argc, &argv);
-  MPI_Comm_rank(MPI_COMM_WORLD, &myrank);
+  MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   MPI_Comm_size(MPI_COMM_WORLD, &size);
 
   //Replace the commented lines with MPI calls
