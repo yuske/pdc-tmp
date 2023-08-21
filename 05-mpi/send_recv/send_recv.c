@@ -26,6 +26,7 @@ int main(int argc, char *argv[] )
     printf("Process %d got %d\n", rank, valueRecived);
     if (rank < size - 1) {
       //Insert MPI command to send value to the next rank
+      value = 5;
       MPI_Send(&value, 1, MPI_INT, rank + 1, 7, MPI_COMM_WORLD);
     }
   }
